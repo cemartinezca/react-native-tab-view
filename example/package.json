@@ -1,5 +1,5 @@
 {
-  "name": "tabviewexample",
+  "name": "Demo Site with Libraries",
   "version": "0.0.2",
   "private": true,
   "main": "index.js",
@@ -16,6 +16,7 @@
     "expo-keep-awake": "~5.0.1",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-tab-view": "^2.9.0",
     "scheduler": "^0.14.0"
   },
   "devDependencies": {
