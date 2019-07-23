@@ -2,33 +2,33 @@ import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 
-type Item = { 
-  dane: string,
-  state: string,
-  city: string,
-  library_name: string,
-  library_address: string,
-  Library_state: string,
-  library_phone: string,
-  latitude: number,
-  longitude: number,
+type Item = {
+  dane: string;
+  state: string;
+  city: string;
+  library_name: string;
+  library_address: string;
+  Library_state: string;
+  library_phone: string;
+  latitude: number;
+  longitude: number;
 };
 
 type Props = {
-  data: Array<Item>
-}
+  data: Array<Item>;
+};
 
 class LibraryItem extends React.PureComponent<{
-  item: { 
-    dane: string,
-    state: string,
-    city: string,
-    library_name: string,
-    library_address: string,
-    Library_state: string,
-    library_phone: string,
-    latitude: number,
-    longitude: number,
+  item: {
+    dane: string;
+    state: string;
+    city: string;
+    library_name: string;
+    library_address: string;
+    Library_state: string;
+    library_phone: string;
+    latitude: number;
+    longitude: number;
   };
 }> {
   render() {
@@ -51,7 +51,7 @@ class LibraryItem extends React.PureComponent<{
   }
 }
 
-export default class Libraries extends React.Component <Props, {}> {
+export default class Libraries extends React.Component<Props, {}> {
   private renderItem = ({ item }: { item: Item }) => (
     <LibraryItem item={item} />
   );
